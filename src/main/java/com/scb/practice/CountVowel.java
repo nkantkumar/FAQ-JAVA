@@ -16,8 +16,10 @@ public class CountVowel {
     {
         if (n == 1)
             return isVowel(str.charAt(n - 1));
+        int sum = isVowel(str.charAt(n - 1))  ;
+        //countVowels(str, n-1)
       
-        return countVowels(str, n-1) + isVowel(str.charAt(n - 1));
+        return sum;
     }
       
     // Main Calling Function
