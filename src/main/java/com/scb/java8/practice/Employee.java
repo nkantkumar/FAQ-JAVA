@@ -11,7 +11,7 @@ public class Employee {
 	   }
 	     
 	   private Integer id;
-	   private Integer age;
+	   private double age;
 	   private String gender;
 	   private String firstName;
 	   private String lastName;
@@ -20,7 +20,7 @@ public class Employee {
 	 
 	    @Override
 	    public String toString() {
-	        return this.id.toString()+" - "+this.age.toString(); //To change body of generated methods, choose Tools | Templates.
+	        return this.id.toString()+" - "+this.age; //To change body of generated methods, choose Tools | Templates.
 	    }
 
 		/**
@@ -40,15 +40,15 @@ public class Employee {
 		/**
 		 * @return the age
 		 */
-		public Integer getAge() {
+		public double getAge() {
 			return age;
 		}
 
 		/**
-		 * @param age the age to set
+		 * @param d the age to set
 		 */
-		public void setAge(Integer age) {
-			this.age = age;
+		public void setAge(double d) {
+			this.age = d;
 		}
 
 		/**
